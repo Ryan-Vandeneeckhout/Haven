@@ -1,0 +1,18 @@
+.Bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  width: 100%;
+  min-width: 100px;
+
+  .greyBar {
+    height: 24px;
+    background-color: lightgrey;
+    outline: black solid 2px;
+  }
+  .greenBar {
+    height: 24px;
+    background-color: #3dcc79;
+    outline: black solid 2px;
+  }
+}

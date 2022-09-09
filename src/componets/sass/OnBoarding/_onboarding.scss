@@ -1,0 +1,292 @@
+@import "../variables.scss";
+
+.errorAlert {
+  color: red;
+}
+.onBoardingSectionWrapper {
+  height: 100vh;
+  background-image: url("../../../../public/assets/materials/backgrounds/landingBackground.png");
+
+  .wrapper10 {
+    margin-top: 2.5vh;
+    min-height: 90vh;
+  }
+  .contentWrapper {
+    min-height: 90vh;
+    padding: 20px 50px;
+    position: relative;
+    background-color: #f3f3f3;
+    outline: solid grey 1px;
+  }
+  .middleContent {
+    label {
+      margin-bottom: 10px;
+    }
+
+    .textInputHaven {
+      input {
+        background: #f2f8f4;
+        border: none;
+        border-radius: 15px;
+        color: black;
+        height: 40px;
+        outline: 2px solid black;
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+
+    .acceptCondtions {
+      label {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+    p {
+      margin-top: 20px;
+    }
+
+    .submitButton {
+      background: #3b5239;
+      border-radius: 15px;
+      border: none;
+      color: white;
+      font-size: 12px;
+      font-weight: bolder;
+      height: 32px;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      width: 250px;
+    }
+  }
+  .bottomContent {
+    margin-top: 40px;
+    width: 100%;
+    left: 0;
+    bottom: 20%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+    button {
+      border: none;
+      text-transform: uppercase;
+      padding: 10px;
+      width: 80px;
+      color: black;
+      font-size: 12px;
+      line-height: 120%;
+      letter-spacing: 1.25px;
+      cursor: pointer;
+    }
+    .backButton {
+      background-color: transparent;
+    }
+  }
+}
+
+.birthdayBackground {
+  background-image: url("../../../../public/assets/backgrounds/ballon.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.heartBackground {
+  background-image: url("../../../../public/assets/backgrounds/heart.png");
+  background-repeat: no-repeat;
+}
+.interestsContainer {
+  min-height: 25vh;
+  ul {
+    flex-wrap: wrap;
+    @include FlexRowCenter;
+    @include UlNormalize;
+    justify-content: flex-start;
+
+    .interestButtons {
+      margin: 3px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-family: Roboto;
+      text-transform: none;
+      letter-spacing: 0.25px;
+      cursor: pointer;
+      color: black;
+      border: 2px solid transparent;
+      max-width: fit-content;
+      padding: 8px;
+    }
+
+    .darkblueOrchid {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+    }
+
+    .aqua {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #0ed2f7, #b2fefa) border-box;
+    }
+
+    .orangeYellow {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #ff75c3, #faff00) border-box;
+    }
+
+    .redBlue {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #ff0000, #0971ad) border-box;
+    }
+
+    .samlonPink {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #1efadf, #acf42d) border-box;
+    }
+
+    .clickedTagButton {
+      background: linear-gradient(#fee079, #fee079) padding-box;
+    }
+  }
+}
+
+.Avatars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 10% 0;
+  .imgAvatar {
+    height: 60px;
+    width: 60px;
+    margin: 5% 2%;
+    cursor: pointer;
+    border-radius: 90%;
+    background-color: #e8e8e8;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+
+    cursor: pointer;
+  }
+  .selectedAvatar {
+    outline: solid #3f273a 3px;
+    border-radius: 90%;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .onBoardingSectionWrapper {
+    background-image: none;
+    .contentWrapper {
+      padding: 0px;
+      background-color: transparent;
+      outline: none;
+    }
+    .upperContent {
+      .desktopParagraph {
+        display: none;
+      }
+    }
+    .bottomContent {
+      padding: 0;
+      bottom: 10%;
+    }
+    .middleContent {
+      justify-content: center;
+      display: flex;
+
+      .submitButton {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.questionList {
+  @include UlNormalize;
+}
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  outline: solid grey 1px;
+  border-radius: 15px;
+  padding: 5%;
+  margin-bottom: 10%;
+  background-color: white;
+
+  .imageContainer {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  textarea {
+    min-height: 50%;
+    border: none;
+    background-color: white;
+  }
+
+  .submit {
+    background-color: #60725d;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 5%;
+    align-self: flex-end;
+  }
+}
+.cardSelectedBox {
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 10%;
+  border: dotted black 2px;
+
+  button {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 90%;
+  }
+}
+@media only screen and (min-width: 625px) {
+  .momentsSubmitMyProfile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include UlNormalize;
+    align-content: center;
+    justify-content: center;
+
+    .questionForm {
+      max-width: 500px;
+      min-width: 400px;
+      max-height: 300px;
+      min-height: 300px;
+      margin: 2%;
+      padding: 1%;
+      margin-bottom: 2%;
+    }
+  }
+
+  .myPastMoments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.havenh2pTag {
+  margin: 0;
+}

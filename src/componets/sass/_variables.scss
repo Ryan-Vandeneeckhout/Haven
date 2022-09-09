@@ -1,0 +1,68 @@
+@mixin Maxsize100 {
+  width: 100%;
+  height: 100%;
+}
+@mixin Maxsize50 {
+  width: 50%;
+  height: 50%;
+}
+
+@mixin Maxsize50x100 {
+  width: 50%;
+  height: 100%;
+}
+@mixin Maxsize100x50 {
+  width: 100%;
+  height: 50%;
+}
+@mixin PaddingMargin0 {
+  padding: 0;
+  margin: 0;
+}
+@mixin Center {
+  justify-content: center;
+  align-items: center;
+}
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin FlexRowCenter {
+  @include FlexRow;
+  align-items: center;
+}
+@mixin FlexColumnCenter {
+  @include FlexColumn;
+  align-items: center;
+}
+
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin TextAliginCenter {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@mixin UlNormalize {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@mixin ANormalize {
+  text-decoration: none;
+}
+@mixin LightGreen {
+  background-color: #c0ff99;
+}
+@mixin MediumGreen {
+  background-color: #66ffa6;
+}
+@mixin Grey {
+  background-color: grey;
+}
+@mixin centerItems {
+  justify-content: center;
+  align-items: center;
+}

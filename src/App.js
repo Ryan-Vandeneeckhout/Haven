@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./componets/sass/_app.scss";
+import "./componets/sass/StyleGuide.scss";
+import "./componets/sass/_variables.scss"; 
+
+import SignedIn from "./componets/routingComponents/SignedIn.jsx";
+import SignedOut from "./componets/routingComponents/SignedOut.jsx";
+
+import { useAuthContext } from "./componets/firebase/firebasehooks/useAuthContext";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
+
+  const { user, authIsReady } = useAuthContext();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          {authIsReady && (
+            <>
+            {user && <SignedIn user={user} />}
+            {!user && <SignedOut user={user} />}
+              </>
+          )}
+      </BrowserRouter>
     </div>
   );
 }

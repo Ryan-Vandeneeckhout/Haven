@@ -1,0 +1,93 @@
+@import "../variables.scss";
+
+.SignedOutLandingPage {
+  @include FlexColumnCenter;
+  height: 100vh;
+  background-image: url("../../../../public/assets/materials/backgrounds/landingBackground.png");
+
+  .wrapper15 {
+    @include Maxsize100;
+    position: relative;
+
+    p {
+      text-align: center;
+      font-size: clamp(1rem, 0.7662rem + 1.039vw, 2rem);
+      font-weight: 700;
+    }
+
+    .landingPageButtonsContainers {
+      @include FlexColumnCenter;
+      width: 100%;
+
+      .buttonContainer {
+        width: clamp(13rem, 12.2987rem + 3.1169vw, 16rem);
+
+        .logInButton {
+          background-color: white;
+          outline: black solid 2px;
+          color: black;
+        }
+
+        a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          width: 100%;
+          padding: clamp(0.5rem, 0.3831rem + 0.5195vw, 1rem);
+          margin: 16px 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 625px) {
+  .SignedOutLandingPage .content {
+    @include FlexRowCenter;
+    @include Maxsize100;
+    justify-content: space-between;
+
+    .upperContainer {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      p {
+        text-align: left;
+      }
+    }
+
+    .bottomContainer {
+      order: 1;
+      width: 40%;
+    }
+  }
+
+  .SignedOutLandingPage .wrapper15 {
+    padding: 0% 10%;
+
+    .bottomContainer {
+      border-right: #60725d solid 4px;
+    }
+  }
+}
+@media only screen and (max-width: 625px) {
+  .SignedOutLandingPage .content {
+    @include FlexColumnCenter;
+    @include Maxsize100;
+    justify-content: center;
+
+    .mobilePara {
+      display: none;
+    }
+    .upperContainer {
+      order: 1;
+      width: 100%;
+    }
+
+    .bottomContainer {
+      order: 2;
+      width: 100%;
+    }
+  }
+}

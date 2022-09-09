@@ -1,0 +1,120 @@
+.shapes {
+  min-height: 90%;
+  width: 100%;
+  position: absolute;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: gold;
+  stroke-width: 2px;
+  stroke: gold;
+  text-shadow: 0 0 3px #000;
+}
+.shapes .star {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+  stroke: white;
+  stroke-width: 1em;
+}
+.shapes .star:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  color: darkred;
+  stroke: goldenrod;
+  stroke-width: 1em;
+  animation: animate 8s linear infinite;
+}
+.shapes .star:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  color: goldenrod;
+  stroke: darkred;
+  stroke-width: 1em;
+  animation: animate 10s linear infinite;
+}
+.shapes .star:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  color: blue;
+  animation: animate 3s linear infinite;
+}
+.shapes .star:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  color: green;
+  animation: animate 7s linear infinite;
+}
+.shapes .star:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  color: purple;
+  animation: animate 9s linear infinite;
+}
+.shapes .star:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  color: pink;
+  animation: animate 5s linear infinite;
+}
+.shapes .star:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  color: orange;
+  animation: animate 8s linear infinite;
+}
+.shapes .star:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  color: yellow;
+  animation: animate 10s linear infinite;
+}
+.shapes .star:nth-child(9) {
+  top: 10%;
+  left: 50%;
+  color: silver;
+  animation: animate 6s linear infinite;
+}
+.shapes .star:nth-child(10) {
+  top: 35%;
+  color: lightblue;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.shapes .star:nth-child(11) {
+  top: 0%;
+  left: 90%;
+  color: firebrick;
+  animation: animate 9s linear infinite;
+}
+.shapes .star:nth-child(12) {
+  top: 10%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.shapes .star:nth-child(13) {
+  top: 10%;
+  left: 80%;
+  color: darkviolet;
+  animation: animate 8s linear infinite;
+}
+.shapes .star:nth-child(14) {
+  top: 50%;
+  left: 5%;
+  color: red;
+  animation: animate 6s linear infinite;
+}
+.shapes .star:nth-child(15) {
+  top: 0%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(200px) rotate(360deg);
+  }
+}

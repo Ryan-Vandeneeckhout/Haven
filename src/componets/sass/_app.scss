@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+html {
+  --headercolor: white;
+  --fontColor: black;
+  --loginButtonColor: white;
+  --loginButtonFontColor: black;
+  --signupButtonColor: #c0ff99;
+  --signupButtonFontColor: black;
+}
+html[data-theme="violet"] {
+  --headercolor: rgb(60, 6, 69);
+  --fontColor: white;
+  --loginButtonColor: white;
+  --loginButtonFontColor: black;
+  --signupButtonColor: white;
+  --signupButtonFontColor: black;
+}
+html[data-theme="indigo"] {
+  --headercolor: rgb(74, 43, 122);
+  --fontColor: white;
+  --loginButtonColor: rgb(141, 12, 164);
+  --loginButtonFontColor: white;
+}
+html[data-theme="blue"] {
+  --headercolor: rgb(5, 5, 49);
+  --fontColor: white;
+}
+html[data-theme="green"] {
+  --headercolor: rgb(15, 39, 14);
+  --fontColor: white;
+}
+html[data-theme="orange"] {
+  --headercolor: rgb(150, 63, 17);
+  --fontColor: white;
+}
+html[data-theme="red"] {
+  --headercolor: rgb(110, 5, 17);
+  --fontColor: white;
+  --loginButtonColor: white;
+  --loginButtonFontColor: black;
+  --signupButtonColor: white;
+  --signupButtonFontColor: black;
+}
+html[data-theme="rainbow"] {
+  --headercolor: #360b54;
+  --fontColor: white;
+}

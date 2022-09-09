@@ -1,0 +1,96 @@
+@import "./variables.scss";
+
+$fontH1: 30px;
+$fontLarge: 24px;
+$fontMedium: 20px;
+$fontSmall: 16px;
+$fontButton: 12px;
+
+$fontHeadingType: "Roboto", Arial, Helvetica, sans-serif;
+$fontBodyType: "Roboto", Arial, Helvetica, sans-serif;
+
+button {
+  font-family: $fontBodyType;
+  font-size: $fontButton;
+  line-height: 120%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-family: $fontBodyType;
+  font-size: $fontSmall;
+  line-height: 130%;
+}
+
+h3 {
+  font-family: $fontHeadingType;
+  font-size: $fontMedium;
+  line-height: 120%;
+}
+
+h2 {
+  font-family: $fontHeadingType;
+  font-size: $fontMedium;
+  line-height: 120%;
+}
+.havenh2 {
+  font-family: Archivo;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: clamp(4rem, 2.1299rem + 8.3117vw, 12rem);
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #c3e8bd;
+  font-family: Archivo;
+  stroke: black;
+  stroke-width: 1px;
+  -webkit-text-stroke: 1px black;
+}
+.hidden {
+  display: none;
+}
+.shown {
+  display: flex;
+}
+.wrapper5 {
+  padding: 0 5%;
+}
+.wrapper10 {
+  padding: 0 10%;
+}
+
+.wrapper15 {
+  padding: 0 15%;
+}
+
+.wrapper5x5 {
+  padding: 5% 5%;
+}
+.wrapper10x10 {
+  padding: 10% 10%;
+}
+
+.wrapper15x15 {
+  padding: 15% 15%;
+}
+.redColour {
+  color: red;
+}
+.greenColor1 {
+  background-color: #60725d;
+}
+.greenColor2 {
+  background-color: #c3e8bd;
+}
+.greyColor1 {
+  background-color: #dedede;
+}
+@media only screen and (max-width: 625px) {
+  h1 {
+    text-align: center;
+  }
+}

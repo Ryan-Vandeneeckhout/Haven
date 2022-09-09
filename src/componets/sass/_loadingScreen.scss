@@ -1,0 +1,79 @@
+@import "./StyleGuide.scss";
+@import "./variables.scss";
+
+/* Initial Loading Screen On APP Startup CSS */
+.LoadingScreenSection {
+  color: black;
+  font-family: $fontHeadingType;
+  height: 100vh;
+  width: 100vw;
+
+  .wrapper10 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include centerItems;
+    @include Maxsize100;
+  }
+  button {
+    @include LightGreen;
+    border: solid 4px black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px;
+  }
+}
+.errorConectionDatabase {
+  color: red;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.createUserLoadingScreen {
+  @include FlexColumn;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  min-width: 350px;
+  .square {
+    min-height: inherit;
+    @include FlexColumn;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .circleRotating {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 40px;
+    animation: rotation 4s infinite linear;
+  }
+  .arrows {
+    background: url("../../../public/assets/svg/loadingcircle.svg");
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
