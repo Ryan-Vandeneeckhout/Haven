@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "../HavenSignedInComponents/LandingPage";
 import OnBoarding from "../onBoarding/OnBoarding";
 
