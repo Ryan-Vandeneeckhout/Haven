@@ -27,7 +27,7 @@ const OnBoardingCreateUser = () => {
           <div className="truck">
             <img
               src="./assets/svg/loading.svg"
-              alt="a truck zooming by on the haven user creation page."
+              alt="a truck zooming by on the haven user creation page. success"
             />
           </div>
           <div className="circleRotating">
